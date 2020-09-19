@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
+using System.Xml.Serialization;
 
 namespace MethodTracerLib
 {
@@ -23,10 +25,33 @@ namespace MethodTracerLib
     {
         public string methodName { get; set; }
         public string className { get; set; }
-        public TimeSpan executionTime { get; set; }
+
+        public string time;
+
+        [JsonIgnore]
+        [XmlIgnore]
+        private TimeSpan executionTime;
+
+        [JsonIgnore]
+        [XmlIgnore]
+        public TimeSpan ExecutionTime
+        {
+            get
+            {
+                return executionTime;
+            }
+            set
+            {
+                executionTime = value; 
+                time = String.Format("{0:00}ms", value.Milliseconds);
+
+            }
+
+        }
 
         public List<MethodTrace> innerCalls = new List<MethodTrace>();
 
+        public MethodTrace() { }
         public MethodTrace(MethodBase methodBase)
         {
             this.methodName = methodBase.Name;
@@ -37,9 +62,32 @@ namespace MethodTracerLib
     public class ThreadInfo
     {
         public int id;
-        public TimeSpan executionTime = new TimeSpan(0);
+
+        public string time;
+
+        [JsonIgnore]
+        [XmlIgnore]
+        private TimeSpan executionTime;
+
+        [JsonIgnore]
+        [XmlIgnore]
+        public TimeSpan ExecutionTime
+        {
+            get
+            {
+                return executionTime;
+            }
+            set
+            {
+                executionTime = value;
+                time = String.Format("{0:00}ms", value.Milliseconds);
+
+            }
+
+        }
         public List<MethodTrace> methods = new List<MethodTrace>();
 
+        public ThreadInfo() { }
         public ThreadInfo(int id)
         {
             this.id = id;

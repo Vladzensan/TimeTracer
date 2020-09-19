@@ -1,0 +1,9 @@
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\obj\Debug\MethodTracerLib.csprojAssemblyReference.cache
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\obj\Debug\MethodTracerLib.csproj.CoreCompileInputs.cache
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\bin\Debug\MethodTracerLib.dll
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\bin\Debug\MethodTracerLib.pdb
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\obj\Debug\MethodTracerLib.dll
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\obj\Debug\MethodTracerLib.pdb
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Vladzensan\source\repos\MethodTracer\MethodTracerLib\obj\Debug\MethodTracerLib.csproj.CopyComplete

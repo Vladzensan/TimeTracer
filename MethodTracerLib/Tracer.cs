@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace MethodTracerLib
 {
-    class Tracer : ITracer
+    public class Tracer : ITracer
     {
 
         private TraceResult traceResult = new TraceResult();
@@ -54,12 +54,16 @@ namespace MethodTracerLib
             tracedBlock.watch.Stop();
 
             TimeSpan executionTime = tracedBlock.watch.Elapsed;
-            tracedBlock.methodTrace.executionTime = executionTime;
+            tracedBlock.methodTrace.ExecutionTime = executionTime;
 
             ThreadInfo threadInfo;
             traceResult.threads.TryGetValue(threadId, out threadInfo);
 
-            threadInfo.executionTime.Add(executionTime);
+            if (threadInfo.ExecutionTime == null)
+            {
+                threadInfo.ExecutionTime = new TimeSpan(0);
+            }
+            threadInfo.ExecutionTime = threadInfo.ExecutionTime.Add(executionTime);
         }
 
         public TraceResult GetTraceResult()
