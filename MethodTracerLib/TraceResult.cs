@@ -2,6 +2,7 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Reflection;
 
 namespace MethodTracerLib
 {
@@ -25,6 +26,12 @@ namespace MethodTracerLib
         public TimeSpan executionTime { get; set; }
 
         public List<MethodTrace> innerCalls = new List<MethodTrace>();
+
+        public MethodTrace(MethodBase methodBase)
+        {
+            this.methodName = methodBase.Name;
+            this.className = methodBase.DeclaringType.Name;
+        }
     }
 
     public class ThreadInfo
