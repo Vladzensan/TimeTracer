@@ -36,8 +36,15 @@ namespace MethodTracerLib
 
     public class ThreadInfo
     {
+        public int id;
         public TimeSpan executionTime = new TimeSpan(0);
         public List<MethodTrace> methods = new List<MethodTrace>();
+
+        public ThreadInfo(int id)
+        {
+            this.id = id;
+        }
+             
     }
     public class TraceResult
     {

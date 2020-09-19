@@ -13,7 +13,7 @@ namespace MethodTracerLib
         public void StartTrace()
         {
             int threadId = System.Threading.Thread.CurrentThread.ManagedThreadId;
-            traceResult.threads.GetOrAdd(threadId, new ThreadInfo());
+            traceResult.threads.GetOrAdd(threadId, new ThreadInfo(threadId));
             Stack<TracedBlock> threadStack = threadBlocks.GetOrAdd(threadId, new Stack<TracedBlock>());
 
             StackTrace stackTrace = new StackTrace();
