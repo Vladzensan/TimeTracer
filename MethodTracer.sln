@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodTracer", "MethodTracer\MethodTracer.csproj", "{BD2E6251-1974-4437-82D5-0D55A8A950CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodTracerLib", "MethodTracerLib\MethodTracerLib.csproj", "{F8BB8FE6-D23A-4B45-A3FA-3F8608F0D066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializers", "Serializers\Serializers.csproj", "{969FA335-2B2A-4BFF-B54E-268D160C25A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BD2E6251-1974-4437-82D5-0D55A8A950CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD2E6251-1974-4437-82D5-0D55A8A950CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD2E6251-1974-4437-82D5-0D55A8A950CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD2E6251-1974-4437-82D5-0D55A8A950CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8BB8FE6-D23A-4B45-A3FA-3F8608F0D066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8BB8FE6-D23A-4B45-A3FA-3F8608F0D066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8BB8FE6-D23A-4B45-A3FA-3F8608F0D066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8BB8FE6-D23A-4B45-A3FA-3F8608F0D066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{969FA335-2B2A-4BFF-B54E-268D160C25A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{969FA335-2B2A-4BFF-B54E-268D160C25A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{969FA335-2B2A-4BFF-B54E-268D160C25A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{969FA335-2B2A-4BFF-B54E-268D160C25A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

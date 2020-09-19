@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleWriter.cs" />
+    <Compile Include="FileWriter.cs" />
+    <Compile Include="IWriter.cs" />
     <Compile Include="ISerializer.cs" />
     <Compile Include="JsonSerializer.cs" />
     <Compile Include="Program.cs" />

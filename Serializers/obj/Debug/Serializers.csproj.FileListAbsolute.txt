@@ -1,0 +1,12 @@
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\bin\Debug\Serializers.exe.config
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\bin\Debug\Serializers.exe
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\bin\Debug\Serializers.pdb
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\bin\Debug\MethodTracerLib.dll
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\bin\Debug\MethodTracerLib.pdb
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\obj\Debug\Serializers.csprojAssemblyReference.cache
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\obj\Debug\Serializers.csproj.CoreCompileInputs.cache
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\obj\Debug\Serializers.csproj.CopyComplete
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\obj\Debug\Serializers.exe
+C:\Users\Vladzensan\source\repos\MethodTracer\Serializers\obj\Debug\Serializers.pdb

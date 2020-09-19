@@ -1,0 +1,41 @@
+{
+  "threads": {
+    "1": {
+      "id": 1,
+      "time": "31ms",
+      "methods": [
+        {
+          "time": "26ms",
+          "innerCalls": [],
+          "methodName": "execute",
+          "className": "First"
+        },
+        {
+          "time": "05ms",
+          "innerCalls": [
+            {
+              "time": "00ms",
+              "innerCalls": [],
+              "methodName": "inner",
+              "className": "Second"
+            }
+          ],
+          "methodName": "execute",
+          "className": "Second"
+        }
+      ]
+    },
+    "3": {
+      "id": 3,
+      "time": "24ms",
+      "methods": [
+        {
+          "time": "24ms",
+          "innerCalls": [],
+          "methodName": "execute",
+          "className": "First"
+        }
+      ]
+    }
+  }
+}

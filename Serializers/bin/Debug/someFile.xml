@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfThreadInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ThreadInfo>
+    <id>1</id>
+    <time>31ms</time>
+    <methods>
+      <MethodTrace>
+        <time>26ms</time>
+        <innerCalls />
+        <methodName>execute</methodName>
+        <className>First</className>
+      </MethodTrace>
+      <MethodTrace>
+        <time>05ms</time>
+        <innerCalls>
+          <MethodTrace>
+            <time>00ms</time>
+            <innerCalls />
+            <methodName>inner</methodName>
+            <className>Second</className>
+          </MethodTrace>
+        </innerCalls>
+        <methodName>execute</methodName>
+        <className>Second</className>
+      </MethodTrace>
+    </methods>
+  </ThreadInfo>
+  <ThreadInfo>
+    <id>3</id>
+    <time>24ms</time>
+    <methods>
+      <MethodTrace>
+        <time>24ms</time>
+        <innerCalls />
+        <methodName>execute</methodName>
+        <className>First</className>
+      </MethodTrace>
+    </methods>
+  </ThreadInfo>
+</ArrayOfThreadInfo>

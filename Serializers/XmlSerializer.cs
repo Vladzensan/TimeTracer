@@ -14,6 +14,7 @@ namespace Serializers
             System.Xml.Serialization.XmlSerializer xmlSerializer =
                 new System.Xml.Serialization.XmlSerializer(items.GetType());
 
+
             using (StringWriter textWriter = new StringWriter())
             {
                 xmlSerializer.Serialize(textWriter, items);
