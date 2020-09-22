@@ -51,19 +51,25 @@ namespace MethodTracerLib
             threadBlocks.TryGetValue(threadId, out threadStack);
 
             TracedBlock tracedBlock = threadStack.Pop();
-            tracedBlock.watch.Stop();
-
-            TimeSpan executionTime = tracedBlock.watch.Elapsed;
-            tracedBlock.methodTrace.ExecutionTime = executionTime;
-
-            ThreadInfo threadInfo;
-            traceResult.threads.TryGetValue(threadId, out threadInfo);
-
-            if (threadInfo.ExecutionTime == null)
+            if (tracedBlock.watch.IsRunning)
             {
-                threadInfo.ExecutionTime = new TimeSpan(0);
+                tracedBlock.watch.Stop();
+
+                TimeSpan executionTime = tracedBlock.watch.Elapsed;
+                tracedBlock.methodTrace.ExecutionTime = executionTime;
+
+                ThreadInfo threadInfo;
+                traceResult.threads.TryGetValue(threadId, out threadInfo);
+
+                if (threadInfo.ExecutionTime == null)
+                {
+                    threadInfo.ExecutionTime = new TimeSpan(0);
+                }
+                threadInfo.ExecutionTime = threadInfo.ExecutionTime.Add(executionTime);
+            } else
+            {
+                throw new InvalidOperationException("Stop method already called");
             }
-            threadInfo.ExecutionTime = threadInfo.ExecutionTime.Add(executionTime);
         }
 
         public TraceResult GetTraceResult()
